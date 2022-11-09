@@ -1,0 +1,47 @@
+.button {
+    display: inline-block;
+    height: 58px;
+    width: 172px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 29px;
+    background-color: $accent-color;
+    transition: all .2s ease-in-out;
+    white-space: nowrap;
+
+    line-height: 58px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    &:hover {
+        background-color: $accent-color--hover;
+    }
+
+    &--white {
+        color: $black-color;
+        background-color: #fff;
+        &:hover {
+            background-color: $black-color;
+            color: #FFFFFF;
+        }
+    }
+    &--play {
+        padding-left: 49px;
+        padding-right: 29px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: url('../img/icons/play.svg') no-repeat;
+            position: absolute;
+            left: 30px;
+            top: 23px;
+        }
+    }
+    &--orange-text {
+        color: $accent-color;
+    }
+}

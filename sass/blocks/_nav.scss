@@ -1,0 +1,10 @@
+.nav {
+    padding: 35px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+

@@ -1,0 +1,41 @@
+.footer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    &__logo {
+        margin-bottom: 15px;
+        margin-left: -7px;
+    }
+
+    &__socials {
+        margin-top: 40px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__col {
+        margin-left: 85px;
+
+        &:first-of-type {
+            margin-right: auto;
+            margin-left: 0;
+            max-width: 306px;
+        }
+    }
+
+    &__title {
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    &__nav {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        li {
+            margin-top: 13px;
+        }
+    }
+}

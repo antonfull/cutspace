@@ -1,0 +1,33 @@
+.benefit-card {
+
+    &__icon {
+        margin-bottom: 15px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 2px;
+        letter-spacing: 0.5px;
+    }
+
+    svg path {
+        fill: $main-color;
+        transition: all .2s ease-in;
+    }
+    svg circle {
+        fill-opacity: 0.2;
+        fill: $main-color;
+        transition: all .2s ease-in;
+    }
+
+    &:hover {
+        svg path {
+            fill: #ffffff;
+        }
+        svg circle {
+            fill-opacity: 1;
+            fill: $accent-color;
+        }
+    }
+}

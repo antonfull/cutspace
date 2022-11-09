@@ -1,0 +1,44 @@
+.footer-cta {
+    background: url('../img/footer/footer-bg.svg') no-repeat top 30px right / cover;
+    color: #ffffff;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        column-gap: 95px;
+    }
+
+    &__text {
+        max-width: 359px;
+        padding-bottom: 55px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__button {
+        margin-top: 40px;
+    }
+
+    &__image {
+        position: relative;
+        flex-grow: 1;
+        img {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 743px;
+            height: calc(743px / 2);
+            bottom: 0;
+            left: 0;
+            background: url('../img/footer/footer-oval.svg') no-repeat;
+        }
+    }
+}
